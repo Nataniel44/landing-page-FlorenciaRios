@@ -38,24 +38,28 @@ export default function Home() {
         <header className="flex relative">
           <div className="border-solid w-72 h-72 md:w-72 md:h-72 rounded-full border-pink-400/35 border absolute -left-0 top-10"></div>
           <div className="border-solid w-72 h-72 rounded-full border-pink-400/10 border absolute -right-0 bottom-10"></div>
-          <div className="z-30 flex justify-center items-center gap-5 md:flex-row flex-col w-full">
+          <div className="border-solid w-72 h-72 rounded-full border-pink-400/10 border absolute -left-0 -bottom-16"></div>
+          <div className="border-solid w-72 h-72 rounded-full border-pink-400/10 border absolute -right-0 -bottom-28"></div>
+          <div className="z-30 flex justify-center items-center gap-10 md:flex-row flex-col w-full py-10">
             <div>
               <Image
                 src="/flor.jpeg"
                 alt="Florencia Rios"
                 width={240}
                 height={240}
-                className="aspect-auto h-60 object-cover border border-pink-300"
+                className="rounded-full aspect-square object-cover border border-pink-300"
               />
             </div>
-            <div className="text-center md:text-start gap-1 flex flex-col">
-              <h1
-                className={`${italianno.className} text-5xl font-bold md:text-5xl `}
-              >
+            <div className="text-center md:text-start gap-1 flex flex-col ">
+              <h1 className={` text-4xl font-extrabold md:text-5xl `}>
                 Florencia Rios
               </h1>
               <h2>
-                <span className="text-pink-300/85 text-lg">Fotógrafa</span>
+                <span
+                  className={`${italianno.className} text-pink-300 text-5xl font-bold md:text-6xl `}
+                >
+                  Fotografías
+                </span>
               </h2>
               <a
                 className="font-extrabold hover:text-pink-200 text-pink-300 uppercase text-lg md:text-xl underline mt-3"
